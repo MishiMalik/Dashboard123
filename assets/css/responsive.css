@@ -74,6 +74,9 @@
      .side-menu{
    display: flex;
      }
+     .contact-card{
+        display: block;
+     }
 }
 
 /* @media only screen and (max-width:767px){
