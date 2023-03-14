@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Sofia Fonts  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Nunito -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Sofia+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+    rel="stylesheet">
+  <!-- bootstarp -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <title>Dashboard</title>
+</head>
+
+<body>
+  <div class="d-flex">
+    <aside class="sidebar">
+      <div class="logo">
+        <a href="">
+          <img src="assets/images/logo.png" alt="" class="img-fluid">
+        </a>
+      </div>
+      <div class="profile-information mt-1">
+        <div class="profile-pic">
+          <img src="assets/images/profile.jpg" alt="" class="img-fluid">
+        </div>
+        <h1 class="f-18 w-700 mb-0 pb-0 mt-2">Awais Recway</h1>
+        <p class="f-16 text-grey w-500">uosdevelopers@gmail.com</p>
+      </div>
+      <nav class="nav-menu  d-flex flex-column ">
+        <div class="d-flex align-items-center">
+          <a class="nav-link active-nav" href="">
+            <i class="bi bi-speedometer2"></i>
+            Dashboard
+          </a>
+        </div>
+
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="">
+            <i class="bi bi-kanban"></i>
+            All Orders
+          </a>
+        </div>
+        <div>
+          <button class="dropdown-btn d-flex nav-link ">
+            <i class="bi bi-sign-intersection-side"></i>
+            Conduct Interview
+            <i class="bi bi-chevron-down ms-2 f-12 mt-1"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">New Order</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Pending</a>
+
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Booked</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Approved</a>
+
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Interview Interrupted</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Under Investigation</a>
+
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Denied</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Canceled</a>
+
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Not Answerd</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Not Show Up</a>
+
+            <a href="#" class="f-14 w-600 text-grey no-decoration">Rescheduling</a>
+          </div>
+        </div>
+        <div>
+          <button class="dropdown-btn d-flex nav-link ">
+            <i class="bi bi-back"></i>
+            Check Background
+            <i class="bi bi-chevron-down ms-2 f-12 mt-1"></i>
+          </button>
+          <div class="dropdown-container">
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">New Order</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Pending</a>
+
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Consent Sent</a>
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Approvel Recieved</a>
+
+            <a href="#" class="f-14 w-600 text-grey mb-3 no-decoration">Research Started</a>
+            <a href="#" class="f-14 w-600 text-grey  no-decoration">Results Recieved</a>
+          </div>
+        </div>
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="">
+            <i class="bi bi-hourglass-split"></i>
+            History
+          </a>
+        </div>
+        <div class="d-flex align-items-center">
+          <a class="nav-link" href="">
+            <i class="bi bi-gear-wide-connected"></i>
+            Settings
+          </a>
+        </div>
+        <div class="d-flex align-items-center mt-auto ">
+          <a class="nav-link text-dark" href="">
+            <i class="bi bi-box-arrow-left"></i>
+            Log Out
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main pb-3 ms-auto">
+      <header class="header w-100 mt-lg-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex justify-content-between align-items-lg-end align-items-center   w-100">
+                <div>
+                  <h1 class="f-30 w-700 font-secondary m-0 p-0">Dashboard</h1>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="contact-div">
+                    <div>
+                      <i class="bi bi-envelope-at f-28 text-black p-0"></i>
+                    </div>
+                    <div class="ms-2 ">
+                      <h2 class="f-12 w-700 text-grey p-0 m-0 ">Contact Us:</h2>
+                      <div style="margin-top: -5px !important;">
+                        <a href="mailto:info@recway.nu" class="no-decoration p-0 text-grey w-700 f-14">info@recway.nu</a>
+                      </div>
+                    </div>
+                  </div>
+                 
+                 
+                  <div class="select-language ms-2 ">
+                    <img src="assets/images/US.webp" class="mb-1 active-lang" alt="">
+                    <img src="assets/images/Flag_of_Sweden.svg.png" class="" alt="">
+                  </div>
+                  <div class="side-menu ms-2">
+                    <i class="bi bi-list"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section>
+        <div class="container mt-lg-2 mt-0">
+          <div class="row">
+            <div class="col-lg-3">
+              <a href="" class="no-decoration">
+                <div class="total-card bg-black mb-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <p class="f-16 w-500 text-white mb-0 pb-0">Total Candidates</p>
+                    </div>
+                    <div class="icon">
+                      <i class="bi bi-person-fill text-dark"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h1 class="f-24 w-600 text-white mb-0 pb-0">76598</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3">
+              <a href="" class="no-decoration">
+                <div class="total-card mb-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <p class="f-16 w-700  mb-0 pb-0">Total Orders</p>
+                    </div>
+                    <div class="icon">
+                      <i class="bi bi-terminal-fill text-black"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h1 class="f-24 w-600 mb-0 pb-0">1600</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+
+            <div class="col-lg-3">
+              <a href="" class="no-decoration">
+                <div class="total-card mb-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <p class="f-16 w-700 mb-0 pb-0">Total Customers</p>
+                    </div>
+                    <div class="icon">
+                      <i class="bi bi-terminal-fill text-black"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h1 class="f-24 w-600  mb-0 pb-0">9800</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+
+            <div class="col-lg-3">
+              <a href="" class="no-decoration">
+                <div class="total-card mb-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <p class="f-16 w-700 mb-0 pb-0">Total Staff</p>
+                    </div>
+                    <div class="icon">
+                      <i class="bi bi-terminal-fill text-black"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mt-4">
+                    <h1 class="f-24 w-600  mb-0 pb-0">8000</h1>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-lg-9">
+              <div class="d-flex align-items-center justify-content-between w-100">
+                <div>
+                  <h2 class="f-18 w-800 text-black">
+                    Recent Orders
+                  </h2>
+                </div>
+
+                <div>
+                  <a href="" class="no-decoration text-grey f-14 w-500">View All</a>
+                </div>
+              </div>
+              <div class="table-div">
+                <table id="myTable" class="display Table">
+                  <thead>
+                    <tr>
+                      <th class="table-head">ID</th>
+                      <th class="table-head">Name</th>
+                      <th class="table-head">Date</th>
+                      <th class="table-head">Price</th>
+                      <th class="table-head">Status</th>
+                      <!-- <th class="table-head">Order Initiated</th>
+                          <th class="table-head">Interview date</th>
+                          <th class="table-head">Background Check</th> -->
+                      <th class="table-head">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="f-14">#086</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Shaheen Shah Afridi</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">5000</td>
+                      <td>
+                        <div class="status-active">Active</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#087</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Muhammad Hafeez</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                        <div class="status-approved">Approved</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#088</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Shadab Khan</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">4000</td>
+                      <td>
+                        <div class="status-pending">Pending</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#089</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Babar Azam</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                        <div class="status-pause">Pause</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#090</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Haris Hauf</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                         <div class="status-pause">Pause</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#091</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Muhhamd Rizwan</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                         <div class="status-pause">Pause</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#091</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Imad waseem</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                         <div class="status-pause">Pause</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#092</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Shahid Afridi</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                         <div class="status-pause">Pause</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="f-14">#091</td>
+                      <td class="f-14"><a href="" class="no-decoration text-black">Saeed Ajmal</a></td>
+                      <td class="f-14">13/03/2023</td>
+                      <td class="f-14">7000</td>
+                      <td>
+                         <div class="status-pause">Pause</div>
+                      </td>
+                      <td>
+                        <div class="d-flex">
+                          <a href="" class="no-decoration"><i class="bi bi-pen text-black f-14"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-eye mx-2 f-14 text-black"></i></a>
+                          <a href="" class="no-decoration"><i class="bi bi-trash3 f-14 text-black"></i></a>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="mt-3">
+                <div class="d-flex align-items-center justify-content-between w-100">
+                  <div>
+                    <h2 class="f-18 w-800 text-black">
+                      New Order
+                    </h2>
+                  </div>
+
+                  <div>
+                    <a href="" class="no-decoration text-grey f-14 w-500">View</a>
+                  </div>
+                </div>
+                <form action="" class="form">
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Candidate Name</label>
+                    <input type="text" placeholder="Enter Candidate Name" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                      <i class="bi bi-person"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Candidate ID</label>
+                    <input type="text" placeholder="Enter Candidate ID" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                      <i class="bi bi-app-indicator"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Candidate Email</label>
+                    <input type="text" placeholder="Enter Candidate Email" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                      <i class="bi bi-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Candidate's Country</label>
+                    <select class="form-select from-input" aria-label="Default select example">
+                      <option selected>Enter Candidate Country</option>
+                      <option value="1">Pakistan</option>
+                      <option value="2">Swedin</option>
+                      <option value="3">Us</option>
+                    </select>
+                    <!-- <div class="form-icon me-2">
+                        <i class="bi bi-globe2"></i>
+                      </div> -->
+                  </div>
+
+                  <div class="d-flex justify-content-end">
+                    <a href="" class="form-btn">Fill More</a>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+
+            <div class="col-lg-3">
+              <div class="grey-box mb-2">
+                <div class="d-flex align-items-center justify-content-between w-100 mb-1">
+                  <div>
+                    <h2 class="f-14 w-800 text-black">
+                      Order Statistics
+                    </h2>
+                  </div>
+                  <div>
+                    <a href="" class="no-decoration text-grey f-12 w-500">View </a>
+                  </div>
+                </div>
+                <div id="piechart" style="width: 100%; height: 100%;"></div>
+              </div>
+              <div class="grey-box mb-2">
+                <div class="d-flex align-items-center justify-content-between w-100 mb-1">
+                  <div>
+                    <h2 class="f-14 w-800 text-black">
+                      Candidate Statistics
+                    </h2>
+                  </div>
+                  <div>
+                    <a href="" class="no-decoration text-grey f-12 w-500">View </a>
+                  </div>
+                </div>
+                <div id="chart_div" style="width: 100%; height: 100%;"></div>
+              </div>
+              <div class="grey-box ">
+                <div class="d-flex align-items-center justify-content-between w-100 mb-1">
+                  <div>
+                    <h2 class="f-14 w-800 text-black">
+                      Order History
+                    </h2>
+                  </div>
+                  <div>
+                    <a href="" class="no-decoration text-grey f-12 w-500">View </a>
+                  </div>
+                </div>
+                <a href="" class="no-decoration">
+                  <div class="side-card mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
+                        <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
+                      </div>
+                      <div>
+                        <h2 class="f-14 w-800 text-black m-0 p-0">
+                          $120
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <a href="" class="no-decoration">
+                  <div class="side-card mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
+                        <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
+                      </div>
+                      <div>
+                        <h2 class="f-14 w-800 text-black m-0 p-0">
+                          $220
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+                <div class="side-card mb-2">
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                      <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
+                      <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
+                    </div>
+                    <div>
+                      <h2 class="f-14 w-800 text-black m-0 p-0">
+                        $320
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <a href="" class="no-decoration">
+                  <div class="side-card mb-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div>
+                        <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
+                        <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
+                      </div>
+                      <div>
+                        <h2 class="f-14 w-800 text-black m-0 p-0">
+                          $20
+                        </h2>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  </div>
+
+
+  <footer class="ms-auto  py-2 text-white text-center footer f-14">
+    Recway All rights reserved @2023
+  </footer>
+
+  <div class="backdrop"></div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+
+  <script src="assets/js/app.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script>
+    google.charts.load('current', { packages: ['corechart', 'bar'] });
+    google.charts.setOnLoadCallback(drawBasic);
+
+    function drawBasic() {
+
+      var data = new google.visualization.DataTable();
+      data.addColumn('timeofday', 'Time of Day');
+      data.addColumn('number', 'Motivation Level');
+
+      data.addRows([
+        [{ v: [8, 0, 0], f: '8 am' }, 1],
+        [{ v: [9, 0, 0], f: '9 am' }, 2],
+        [{ v: [10, 0, 0], f: '10 am' }, 3],
+        [{ v: [11, 0, 0], f: '11 am' }, 4],
+        [{ v: [12, 0, 0], f: '12 pm' }, 5],
+        [{ v: [13, 0, 0], f: '1 pm' }, 6],
+        [{ v: [14, 0, 0], f: '2 pm' }, 7],
+        [{ v: [15, 0, 0], f: '3 pm' }, 8],
+        [{ v: [16, 0, 0], f: '4 pm' }, 9],
+        [{ v: [17, 0, 0], f: '5 pm' }, 10],
+      ]);
+
+      var options = {
+        title: 'Motivation Level Throughout the Day',
+        hAxis: {
+          title: 'Time of Day',
+          format: 'h:mm a',
+          viewWindow: {
+            min: [7, 30, 0],
+            max: [17, 30, 0]
+          }
+        },
+        vAxis: {
+          title: 'Rating (scale of 1-10)'
+        }
+      };
+
+      var chart = new google.visualization.ColumnChart(
+        document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+  <script type="text/javascript">
+    google.charts.load('current', { 'packages': ['corechart'] });
+    google.charts.setOnLoadCallback(drawChart);
+
+    function drawChart() {
+
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Work', 11],
+        ['Eat', 2],
+        ['Commute', 2],
+        ['TV', 2],
+        ['Sleep', 7]
+      ]);
+
+      var options = {
+        title: 'My Daily Activities'
+      };
+
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+      chart.draw(data, options);
+    }
+  </script>
+  <script>
+    let table = new DataTable('#myTable', {
+      "bPaginate": false,
+      "bLengthChange": false,
+      "bFilter": false,
+      "bInfo": false,
+      "bAutoWidth": false
+    });
+  </script>
+</body>
+
+</html>

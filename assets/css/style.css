@@ -1,0 +1,351 @@
+/* font-family: 'Sofia Sans Condensed', sans-serif; */
+/* font-family: 'Nunito', sans-serif; */
+@import "/assets/css/typography.css";
+
+body {
+   font-family: 'Nunito', sans-serif;
+   box-sizing: border-box;
+}
+
+/* ============================================================sidebar*/
+.sidebar {
+   width: 250px;
+   height: 100%;
+   overflow-y: scroll;
+   border-right: 1px solid var(--grey);
+   padding: 15px 0px;
+   position: fixed;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   background-color: white;
+   transition: all 2s;
+}
+
+.sidebar::-webkit-scrollbar {
+   width: 7px;
+}
+
+
+.sidebar::-webkit-scrollbar-thumb {
+   background-color: var(--grey);
+}
+
+.logo {
+   padding: 0px 25px 10px 25px;
+   width: 200px;
+   height: auto;
+   margin: 0px auto;
+}
+
+.profile-information {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.profile-pic {
+   height: 100px;
+   width: 100px;
+   border-radius: 100%;
+   overflow: hidden;
+}
+
+.profile-pic a {
+   object-fit: cover;
+}
+
+.profile-pic a img {
+   height: 100%;
+   width: 100%;
+   border-radius: 100%;
+
+}
+
+.nav-menu {
+   margin: 0px 20px 0px 20px;
+   height: calc(100vh - 265px);
+}
+
+.nav-link {
+   font-size: 15px;
+   color: var(--grey-dark);
+   font-weight: 600;
+   white-space: nowrap;
+}
+
+.nav-link i {
+   font-size: 17px;
+   margin-right: 6px;
+}
+
+.active-nav {
+   color: black;
+}
+
+.nav-link:hover {
+   color: black !important;
+}
+
+.dropdown-container {
+   display: none;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: flex-start;
+   background-color: var(--grey-light);
+   padding: 7px 40px 7px ;
+   position: relative;
+   border: 1px solid var(--grey);
+   border-radius: 4px;
+}
+.dropdown-container a{
+   position: relative;
+   white-space: nowrap;
+}
+.dropdown-container a::before{
+   content: " ";
+   position: absolute;
+   top: 8px;
+   left: -15px;
+   height: 6px;
+   width: 6px;
+   border-radius: 100%;
+   background-color: var(--grey-dark);
+}
+.dropdown-btn {
+   border: none;
+   background-color: transparent;
+}
+
+.dropdown-btn:hover {
+   color: var(--grey-dark) !important;
+}
+
+a:hover {
+   color: inherit !important;
+}
+
+.no-decoration {
+   text-decoration: none;
+}
+
+
+
+/* =====================================================Header */
+.main{
+   width: calc(100% - 250px);
+   min-height: 100vh;
+}
+.footer{
+   width: calc(100% - 250px);
+   background-color: var(--black);
+}
+.header{
+   padding:10px 0px;
+}
+.select-language {
+   display: flex;
+   flex-direction: column;
+}
+.select-language img{
+height: 10px;
+width: 20px;
+cursor: pointer;
+}
+.active-lang{
+   border: 2px solid var(--grey-dark);
+}
+.select-language img:hover{
+   border: 2px solid var(--grey-dark);
+   }
+.side-menu{
+   height: 30px;
+   width: 40px;
+   background-color: var(--grey);
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   font-size: 20px;
+   line-height: 10px;
+   display: none;
+   color: white;
+}
+.contact-div{
+   display: flex;
+   align-items: center;
+}
+/* =====================================================mai section cards */
+.total-card {
+   padding: 15px;
+   border-radius: 7px;
+   border: 1px solid var(--grey);
+   color: var(--black);
+}
+.icon{
+   padding: 5px;
+   border-radius: 100%;
+   background-color: var(--grey-light);
+   height: 30px;
+   width: 30px;
+   border-radius: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: var(--grey-dark);
+   border: 1px solid var(--primary);
+}
+.icon i{
+   line-height: 10px
+}
+.total-card:hover{
+   background-color: var(--black);
+   color: white !important;
+}
+
+/* ----------------==========================================Table */
+.Table{
+   border: 1px solid var(--grey);
+   border-radius: 4px;
+}
+
+.table-head{
+   font-size: 14px;
+   white-space: nowrap;
+   /* min-width: 100px; */
+}
+
+.table-div{
+   /* border: 1px solid var(--grey);
+   border-radius: 4px; */
+   overflow-x: scroll;
+}
+.table-div::-webkit-scrollbar {
+  height: 5px;
+}
+.table-div::-webkit-scrollbar-thumb {
+   background-color: var(--grey);
+  
+}
+.status-active{
+   font-weight: 600;
+   background-color:aqua;
+   text-align: center;
+   font-size: 14px;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 2px 8px;
+}
+.status-pending{
+   font-weight: 600;
+   background-color: rgb(148, 118, 62);
+   text-align: center;
+   font-size: 14px;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 2px 8px;
+}
+.status-approved{
+   font-weight: 600;
+   background-color: rgb(50, 129, 50);
+   text-align: center;
+   font-size: 14px;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 2px 8px;
+}
+.status-pause{
+   font-weight: 600;
+   background-color: var(--grey);
+   text-align: center;
+   font-size: 14px;
+    color: white;
+    border-radius: 3px;
+    width: fit-content;
+    padding: 2px 8px;
+}
+
+
+/* ==============================================================Form */
+.form{
+   border: 1px solid var(--grey);
+   border-radius: 4px;
+   padding: 15px;
+}
+.form-row{
+   border-bottom: 1px solid var(--black);
+   padding: 7px 0px;
+}
+
+.form-row label{
+   border-right: 1px solid var(--black);
+   font-size: 14px;
+   font-weight: 700;
+   color: var(--black);
+   min-width: 120px;
+}
+.from-input{
+   border: none;
+   box-shadow: none;
+   padding: 0px 15px;
+   font-size: 14px;
+   color: var(--black);
+
+}
+.from-input:focus,
+.from-input:active{
+   outline: none;
+   box-shadow: none;
+}
+.from-input::placeholder{
+   border: none;
+   box-shadow: none;
+   padding: none;
+   font-size: 14px;
+   color: var(--grey-dark);
+}
+.form-icon{
+   font-size: 18px;
+   line-height: 10px;
+   color:var(--grey-dark)
+}
+.form-btn{
+   font-size: 14px;
+   color: white;
+   background-color: var(--black);
+   padding: 6px 10px;
+   border-radius: 4px;
+   text-decoration: none;
+}
+.form-btn:hover{
+   color: white !important;
+}
+
+
+
+/* =========================================================right sidebar */
+.grey-box{
+   padding: 15px;
+   background-color: var(--grey-light);
+}
+.side-card{
+   padding: 7px;
+   border-bottom: 1px solid var(--black);
+}
+
+
+
+/* ==============================================================Backdrop */
+.backdrop{
+   background-color: #00000071;
+   position: fixed;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   display: none;
+   transition: all 2s;
+}
