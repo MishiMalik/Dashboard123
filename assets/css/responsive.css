@@ -79,18 +79,10 @@
      }
 }
 
-/* @media only screen and (max-width:767px){
-    .Table{
-        border: 1px solid transparent;
-     }
-     
-     .table-head{
-        min-width: 100px;
-     }
-     
-     .table-div{
-        border: 1px solid var(--grey);
-        border-radius: 4px;
-        overflow-x: scroll;
-     }
-} */
+@media only screen and (max-width:767px){
+  .tab {
+  display: flex;
+  flex-direction: column;
+ }
+ 
+}

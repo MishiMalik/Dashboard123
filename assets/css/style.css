@@ -148,8 +148,10 @@ a:hover {
 .main{
    width: calc(100% - 250px);
    min-height:calc(100vh - 53px);
+   background-color: white;
 }
 .footer{
+   width: calc(100% - 250px);
    background-color: var(--black);
 }
 .header{
@@ -339,9 +341,25 @@ table.dataTable.no-footer{
 .form-btn:hover{
    color: white !important;
 }
-
-
-
+/* =========================================================buttons */
+.blank-btn{
+   background-color: transparent;
+   border: 1px solid var(--grey);
+   padding: 3px 10px;
+   font-size: 14px;
+   color: var(--black);
+   font-weight: 800;
+   border-radius: 4px;
+}
+.blank-btn:hover{
+   background-color: var(--black);
+   border: 1px solid var(--grey);
+   padding: 3px 10px;
+   font-size: 14px;
+   color: white;
+   font-weight: 800;
+   border-radius: 4px;
+}
 /* =========================================================right sidebar */
 .grey-box{
    padding: 15px;
@@ -368,3 +386,45 @@ table.dataTable.no-footer{
 .contact-card{
    display: none;
 }
+
+
+/* =====================================================================candidates Profile */
+.candidate-profile{
+   height: 110px;
+   width: 110px;
+   border-radius: 100%;
+   overflow: hidden;
+   object-fit: cover;
+}
+/* Tabs */
+/* Style the tab */
+.tab {
+   overflow: hidden;
+   border-bottom: 1px solid var(--grey);
+ }
+ 
+ /* Style the buttons inside the tab */
+ .tab button {
+   background-color: inherit;
+   float: left;
+   border: none;
+   outline: none;
+   cursor: pointer;
+   padding: 3px 20px;
+   transition: 0.3s;
+ }
+ 
+ /* Change background color of buttons on hover */
+ .tab button:hover {
+   border-bottom: 2px solid var(--black);
+ }
+ 
+ /* Create an active/current tablink class */
+ .tab button.active {
+   border-bottom: 2px solid var(--black);
+ }
+ 
+ /* Style the tab content */
+ .tabcontent {
+   border-top: none;
+ }
