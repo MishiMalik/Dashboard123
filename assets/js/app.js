@@ -2,18 +2,38 @@
 var dropdown = document.getElementsByClassName("dropdown-btn");
 var i;
 
+// for (i = 0; i < dropdown.length; i++) {
+//   dropdown[i].addEventListener("click", function() {
+//     this.classList.toggle("active");
+//     var dropdownContent = this.nextElementSibling;
+//     if (dropdownContent.style.display === "flex") {
+//       dropdownContent.style.display = "none";
+
+
+//     } else {
+//       dropdownContent.style.display = "flex";
+      
+//     }
+//   });
+// }
+
+
 for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.opacity === "0") {
-      dropdownContent.style.height = "0";
+    if (dropdownContent.style.opacity === "1") {
+      dropdownContent.style.opacity = "0";
+      dropdownContent.style.maxHeight = "0px";
+      dropdownContent.style.minHeight = "0px";
       dropdownContent.style.zIndex= "-100";
+      dropdownContent.style.padding= "10px  0px 10px 40px";
     } else {
       dropdownContent.style.opacity = "1";
       dropdownContent.style.maxHeight = "600px";
+      dropdownContent.style.minHeight = "0px";
       dropdownContent.style.zIndex= "1000";
-      dropdownContent.style.padding= "10px 0px 10px 40px";
+      dropdownContent.style.padding= "10px  0px 10px 40px";
     }
   });
 }
