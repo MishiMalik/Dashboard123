@@ -128,7 +128,7 @@
             <div class="col-lg-12">
               <div class="d-flex justify-content-between align-items-lg-end align-items-center   w-100">
                 <div>
-                  <h1 class="f-30 w-700 font-secondary m-0 p-0">Services</h1>
+                  <h1 class="f-30 w-700 font-secondary m-0 p-0">SPI - Video</h1>
                   
                 </div>
                 <div class="d-flex align-items-center">
@@ -162,126 +162,129 @@
     
       <section>
         <div class="container mt-3">
-          <div class="row h-100">
-            <div class="col-lg-9 ">
-                 <div class="container-fluid p-0 ">
-                    <div class="row p-0">
-                        <div class="col-lg-6 col-md-6">
-                            <a href="interview-type.html" class="no-decoration">
-                                <div class="service-card">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <img src="assets/images/interview.png" alt="" class="img-fluid" height="200" width="200" >
-                                    </div>
-                                    <h1 class="f-18 w-700  text-center">Order Interview </h1>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-6 col-md-6">
-                            <a href="interview-type.html" class="no-decoration">
-                                <div class="service-card">
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <img src="assets/images/history.png" alt="" class="img-fluid" height="200" width="200" >
-                                    </div>
-                                    <h1 class="f-18 w-700  text-center">Order Background Check </h1>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-lg-12">
-                            <div class="grey-box mt-2 ">
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div>
-                                    <p class="f-16 w-600 text-black mb-0 pb-0">Contact Us:</p>
+          <div class="row">
+            <p class="f-14 text-grey w-400 mb-0 pb-0">Type for Interview</p>
+            <div class="col-lg-12">
+                <form action="" class="form">
+                  <div class="form-tag mb-2">Personal Info</div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for=""> Name<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Name" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-person"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Surname<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Surname" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-person"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Email<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Email" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Phone<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Phone Number" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                  </div>
+                    <div class="d-flex align-items-center form-row mb-3">
+                      <label for="" >Social Security Number<sapn class="star text-danger">*</span></label>
+                      <input type="text" placeholder="Enter Candidate Social Security Number" class="w-100 from-input" required>
+                      <div class="form-icon me-2">
+                        <i class="bi bi-shield-fill-exclamation"></i>
+                      </div>
+                    </div>
+                    <div class="d-flex align-items-center form-row mb-3">
+                      <label for="">VASC ID<sapn class="star text-danger">*</span></label>
+                      <input type="text" placeholder="Enter Candidate VASC ID" class="w-100 from-input">
+                      <div class="form-icon me-2">
+                        <i class="bi bi-app-indicator"></i>
+                      </div>
+                    </div>
+                    <div class="form-row mb-3 border-0">
+                        <label for="" class="border-0">Documents<sapn class="star text-danger">*</span></label>
+                            <div class="drop-zone">
+                                <span class="drop-zone__prompt">
+                                  <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-cloud-arrow-up-fill f-40"></i>
+                                    Here you can upload several documents (Interview Templates, Documents or CV)
                                   </div>
-                                  <div class="icon">
-                                    <i class="bi bi-envelope-at text-black"></i>
-                                  </div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center ">
-                                  <h1 class="f-24 w-600 text-black mb-0 pb-0">  <a href="mailto:info@recway.nu"
-                                    class="no-decoration text-black f-16 ">info@recway.nu</a></h1>
-                                </div>
-                
+                                </span>
+                                <input type="file" name="myFile" class="drop-zone__input">
                               </div>
+                      </div>
+                    <div class="form-tag mb-2">Billing</div>
+                    <div class="d-flex align-items-center form-row mb-3">
+                        <label for="" class="label-lg">Reference<br>(Invoice Recepient)<sapn class="star text-danger">*</span></label>
+                        <input type="text" placeholder="Enter Candidate Reference" class="w-100 from-input">
+                        <div class="form-icon me-2">
+                            <i class="bi bi-app-indicator"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center form-row mb-3">
+                        <label for="" class="label-lg">Reference<sapn class="star text-danger">*</span></label>
+                        <input type="text" placeholder="Enter Candidate Reference" class="w-100 from-input">
+                        <div class="form-icon me-2">
+                            <i class="bi bi-app-indicator"></i>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center form-row mb-3">
+                        <label for="" class="label-lg">Invoice Comment <br> (Visible on the invoice)<sapn class="star text-danger">*</span></label>
+                        <input type="text" placeholder="Enter Candidate Email" class="w-100 from-input">
+                        <div class="form-icon me-2">
+                            <i class="bi bi-card-text"></i>
+                        </div>
+                    </div>
+                    <div class="form-row mb-1 border-0">
+                        <label for="" class="border-0">Note<sapn class="star text-danger">*</span></label>
+                         <textarea name="" id="" class="w-100 form-textarea" rows="4" placeholder="Type Note"></textarea>
+                    </div>
+                    
+                    <div class="d-flex align-items-center ">
+                        <p class="f-14 w-700 mb-0 pb-0 me-3">Send Mail<sapn class="star text-danger">*</span></label></p>
+                        <div class="form-check me-2">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                            <label class="form-check-label" for="flexRadioDefault1">
+                                Yes
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                            <label class="form-check-label" for="flexRadioDefault2">
+                                No
+                            </label>
                         </div>
                     </div>
 
-                 </div>
-
+                    <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            I agree to the <a href="">Integrity Policy</a>
+                        </label>
+                    </div>
+                    <!-- <div class="d-flex align-items-center form-row mb-3">
+                      <label for="">Candidate's Country</label>
+                      <select class="form-select from-input" aria-label="Default select example">
+                        <option selected>Enter Candidate Country</option>
+                        <option value="1">Pakistan</option>
+                        <option value="2">Swedin</option>
+                        <option value="3">Us</option>
+                      </select>
+                    </div> -->
+  
+                    <div class="d-flex justify-content-end">
+                      <a href="" class="form-btn">Send Order</a>
+                    </div>
+                  </form>
             </div>
-            <div class="col-lg-3">
-               
-                <div class="grey-box h-100">
-                  <div class="d-flex align-items-center justify-content-between w-100 mb-1">
-                    <div>
-                      <h2 class="f-14 w-800 text-black">
-                        Order History
-                      </h2>
-                    </div>
-                    <div>
-                      <p><a href="" class="no-decoration text-grey f-12 w-500">View </a></p>
-                    </div>
-                  </div>
-                  <a href="" class="no-decoration">
-                    <div class="side-card mb-2">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
-                          <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
-                        </div>
-                        <div>
-                          <h2 class="f-14 w-800 text-black m-0 p-0">
-                            $120
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <a href="" class="no-decoration">
-                    <div class="side-card mb-2">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
-                          <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
-                        </div>
-                        <div>
-                          <h2 class="f-14 w-800 text-black m-0 p-0">
-                            $220
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                  <div class="side-card mb-2">
-                    <div class="d-flex justify-content-between align-items-center">
-                      <div>
-                        <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
-                        <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
-                      </div>
-                      <div>
-                        <h2 class="f-14 w-800 text-black m-0 p-0">
-                          $320
-                        </h2>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="" class="no-decoration">
-                    <div class="side-card mb-2">
-                      <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                          <h1 class="f-14 w-600 text-black mb-0 pb-0">Candidate Name</h1>
-                          <p class="mb-0 pb-0 f-12 text-grey w-600">#08645</p>
-                        </div>
-                        <div>
-                          <h2 class="f-14 w-800 text-black m-0 p-0">
-                            $20
-                          </h2>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-                
-                </div>
             </div>
           </div>
       </section>

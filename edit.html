@@ -47,7 +47,7 @@
             </a>
           </div>
           <div class="d-flex align-items-center">
-            <a class="nav-link" href="orders-type.html">
+            <a class="nav-link active-nav" href="orders-type.html">
               <i class="bi bi-cast"></i>
               Start Orders
             </a>
@@ -59,7 +59,7 @@
             </a>
           </div>
           <div>
-            <button class="dropdown-btn d-flex nav-link active-nav">
+            <button class="dropdown-btn d-flex nav-link ">
               <i class="bi bi-sign-intersection-side"></i>
               Conduct Interview
               <i class="bi bi-chevron-down ms-2 f-12 mt-1"></i>
@@ -128,7 +128,7 @@
             <div class="col-lg-12">
               <div class="d-flex justify-content-between align-items-lg-end align-items-center   w-100">
                 <div>
-                  <h1 class="f-30 w-700 font-secondary m-0 p-0">Services</h1>
+                  <h1 class="f-30 w-700 font-secondary m-0 p-0">Edit Information</h1>
                   
                 </div>
                 <div class="d-flex align-items-center">
@@ -163,45 +163,52 @@
       <section>
         <div class="container mt-3">
           <div class="row">
-            <p class="f-14 text-grey w-400 mb-0 pb-0">Choose Service</p>
+            <p class="f-14 text-grey w-400 mb-0 pb-0">Edit Candidate Information</p>
             <div class="col-lg-12">
                 <form action="" class="form">
-                    <div class="d-flex align-items-center form-row mb-3">
-                      <label for="">Candidate Name</label>
-                      <input type="text" placeholder="Enter Candidate Name" class="w-100 from-input">
-                      <div class="form-icon me-2">
+                  <div class="form-tag mb-2">Personal Info</div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for=""> Name<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Name" class="w-100 from-input">
+                    <div class="form-icon me-2">
                         <i class="bi bi-person"></i>
-                      </div>
                     </div>
-                    <div class="d-flex align-items-center form-row mb-3">
-                      <label for="">Candidate ID</label>
-                      <input type="text" placeholder="Enter Candidate ID" class="w-100 from-input">
-                      <div class="form-icon me-2">
-                        <i class="bi bi-app-indicator"></i>
-                      </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Surname<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Surname" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-person"></i>
                     </div>
-                    <div class="d-flex align-items-center form-row mb-3">
-                      <label for="">Candidate Email</label>
-                      <input type="text" placeholder="Enter Candidate Email" class="w-100 from-input">
-                      <div class="form-icon me-2">
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Email<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Email" class="w-100 from-input">
+                    <div class="form-icon me-2">
                         <i class="bi bi-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Phone<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Phone Number" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                  </div>
+                    <div class="form-row mb-3 border-0">
+                        <label for="" class="border-0">Documents<sapn class="star text-danger">*</span></label>
+                            <div class="drop-zone">
+                                <span class="drop-zone__prompt">
+                                  <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <i class="bi bi-cloud-arrow-up-fill f-40"></i>
+                                    Here you can upload several documents (Interview Templates, Documents or CV)
+                                  </div>
+                                </span>
+                                <input type="file" name="myFile" class="drop-zone__input">
+                              </div>
                       </div>
-                    </div>
-                    <div class="d-flex align-items-center form-row mb-3">
-                      <label for="">Candidate's Country</label>
-                      <select class="form-select from-input" aria-label="Default select example">
-                        <option selected>Enter Candidate Country</option>
-                        <option value="1">Pakistan</option>
-                        <option value="2">Swedin</option>
-                        <option value="3">Us</option>
-                      </select>
-                      <!-- <div class="form-icon me-2">
-                          <i class="bi bi-globe2"></i>
-                        </div> -->
-                    </div>
-  
                     <div class="d-flex justify-content-end">
-                      <a href="" class="form-btn">Fill More</a>
+                      <a href="" class="form-btn">Send Order</a>
                     </div>
                   </form>
             </div>

@@ -86,3 +86,33 @@
  }
  
 }
+
+@media only screen and (max-width:767px){
+    .form-row {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start !important;
+   }
+   .form-row label{
+    border-right: 0px solid var(--black);
+
+    width: 100%;
+ }
+ .form-icon{
+    display: none;
+ }
+ .form-row .label-lg{
+    border-right: 0px solid var(--black);
+    width: 100%;
+ }
+ br{
+    display: none;
+ }
+ .from-input{
+    padding: 0px 0px;
+    margin-top: 10px;
+ }
+ .form-textarea{
+    padding: 10px 15px;
+ }
+  }
