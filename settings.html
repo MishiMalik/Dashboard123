@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Sofia Fonts  -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+    rel="stylesheet">
+  <!-- Nunito -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&family=Sofia+Sans+Condensed:ital,wght@0,300;0,400;0,500;0,600;0,800;1,700&display=swap"
+    rel="stylesheet">
+  <!-- bootstarp -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="assets/css/typography.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+  <title>Dashboard - All Orders</title>
+</head>
+
+<body>
+  <div class="d-flex">
+    <aside class="sidebar">
+        <div class="logo">
+          <a href="">
+            <img src="assets/images/logo.png" alt="" class="img-fluid">
+          </a>
+        </div>
+        <div class="profile-information mt-1">
+          <div class="profile-pic">
+            <img src="assets/images/profile.jpg" alt="" class="img-fluid">
+          </div>
+          <h1 class="f-18 w-700 mb-0 pb-0 mt-2">Awais Recway</h1>
+          <p class="f-16 text-grey w-500">uosdevelopers@gmail.com</p>
+        </div>
+        <nav class="nav-menu  d-flex flex-column ">
+          <div class="d-flex align-items-center">
+            <a class="nav-link " href="index.html">
+              <i class="bi bi-speedometer2"></i>
+              Dashboard
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="nav-link active-nav" href="orders-type.html">
+              <i class="bi bi-cast"></i>
+              Start Orders
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="nav-link " href="orders.html">
+              <i class="bi bi-kanban"></i>
+              All Orders<div class="notification-number ms-2 mt-1">3</div>
+            </a>
+          </div>
+          <div>
+            <button class="dropdown-btn d-flex nav-link ">
+              <i class="bi bi-sign-intersection-side"></i>
+              Conduct Interview
+              <i class="bi bi-chevron-down ms-2 f-12 mt-1"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="interview-order.html" class="f-14 w-600 text-grey mb-3 no-decoration">New Order </a>
+              <a href="interview-pending.html" class="f-14 w-600 text-grey mb-3 no-decoration">Pending</a>
+  
+              <a href="interview-booked.html" class="f-14 w-600 text-grey mb-3 no-decoration">Booked</a>
+              <a href="interview-approved.html" class="f-14 w-600 text-grey mb-3 no-decoration">Approved</a>
+  
+              <a href="interview-interrupted.html" class="f-14 w-600 text-grey mb-3 no-decoration">Interview Interrupted</a>
+              <a href="interview-investigation.html" class="f-14 w-600 text-grey mb-3 no-decoration">Under Investigation</a>
+  
+              <a href="interview-denied.html" class="f-14 w-600 text-grey mb-3 no-decoration">Denied</a>
+              <a href="interview-canceled.html" class="f-14 w-600 text-grey mb-3 no-decoration">Canceled</a>
+  
+              <a href="interview-not-answerd.html" class="f-14 w-600 text-grey mb-3 no-decoration">Not Answerd</a>
+              <a href="interview-not-show-up.html" class="f-14 w-600 text-grey mb-3 no-decoration">Not Show Up</a>
+  
+              <a href="interview-resecheduling.html" class="f-14 w-600 text-grey no-decoration">Rescheduling</a>
+            </div>
+          </div>
+          <div>
+            <button class="dropdown-btn d-flex nav-link ">
+              <i class="bi bi-back"></i>
+              Check Background
+              <i class="bi bi-chevron-down ms-2 f-12 mt-1"></i>
+            </button>
+            <div class="dropdown-container">
+              <a href="check-background-order.html" class="f-14 w-600 text-grey mb-3 no-decoration">New Order</a>
+              <a href="check-background-pending.html" class="f-14 w-600 text-grey mb-3 no-decoration">Pending</a>
+  
+              <a href="check-background-consent-sent.html" class="f-14 w-600 text-grey mb-3 no-decoration">Consent Sent</a>
+              <a href="check-background-approvel-recieved.html" class="f-14 w-600 text-grey mb-3 no-decoration">Approvel Recieved</a>
+  
+              <a href="check-background-research-started.html" class="f-14 w-600 text-grey mb-3 no-decoration">Research Started</a>
+              <a href="check-background-results-recieved.html" class="f-14 w-600 text-grey  no-decoration">Results Recieved</a>
+            </div>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="nav-link" href="history.html">
+              <i class="bi bi-hourglass-split"></i>
+              History
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <a class="nav-link" href="settings.html">
+              <i class="bi bi-gear-wide-connected"></i>
+              Settings
+            </a>
+          </div>
+          <div class="d-flex align-items-center mt-auto ">
+            <a class="nav-link text-dark" href="log-in.html">
+              <i class="bi bi-box-arrow-left"></i>
+              Log Out
+            </a>
+          </div>
+        </nav>
+      </aside>
+
+    <main class="main pb-3 ms-auto">
+      <header class="header w-100 mt-lg-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="d-flex justify-content-between align-items-lg-end align-items-center   w-100">
+                <div>
+                  <h1 class="f-30 w-700 font-secondary m-0 p-0">Profile</h1>
+                  
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="contact-div">
+                    <div>
+                      <i class="bi bi-envelope-at f-28 text-black p-0"></i>
+                    </div>
+                    <div class="ms-2 ">
+                      <h2 class="f-12 w-700 text-grey p-0 m-0 ">Contact Us:</h2>
+                      <div style="margin-top: -5px !important;">
+                        <a href="mailto:info@recway.nu"
+                          class="no-decoration p-0 text-grey w-700 f-14">info@recway.nu</a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="select-language ms-2 ">
+                    <img src="assets/images/US.webp" class="mb-1 active-lang" alt="">
+                    <img src="assets/images/Flag_of_Sweden.svg.png" class="" alt="">
+                  </div>
+                  <div class="side-menu ms-2">
+                    <i class="bi bi-list"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    
+      <section>
+        <div class="container mt-3">
+          <div class="row">
+            <p class="f-14 text-grey w-400 mb-0 pb-0">Your Profile</p>
+            <div class="col-lg-12">
+                <form action="" class="form">
+                  <div class="form-tag mb-2">Profile Info</div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for=""> Name<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Candidate Name" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-person"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Email<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter  Email" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Phone<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter  Phone Number" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-telephone"></i>
+                    </div>
+                  </div>
+                  
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Company<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Company Name" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-building"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Cost Place<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter Cost Place" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-buildings"></i>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center form-row mb-3">
+                    <label for="">Password<sapn class="star text-danger">*</span></label>
+                    <input type="text" placeholder="Enter  Phone Number" class="w-100 from-input">
+                    <div class="form-icon me-2">
+                        <i class="bi bi-key"></i>
+                    </div>
+                  </div>
+                    <div class="d-flex justify-content-end">
+                      <a href="" class="form-btn">Update</a>
+                    </div>
+                  </form>
+            </div>
+            </div>
+          </div>
+      </section>
+    
+    </main>
+
+  </div>
+  <footer class="ms-auto  py-2 text-white text-center footer f-14 mt-3">
+    Recway All rights reserved @2023
+  </footer>
+  <div class="backdrop"></div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.datatables.net/1.13.3/js/jquery.dataTables.min.js"></script>
+
+ 
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
+</html>

@@ -298,7 +298,18 @@ table.dataTable.no-footer{
     width: fit-content;
     padding: 2px 8px;
 }
-
+.table-menu-btn{
+   background-color: transparent;
+   border: none;
+   padding: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+}
+.table-menu-btn-list li:hover{
+   background-color: var(--grey-light);
+}
 
 /* ==============================================================Form */
 .form{
