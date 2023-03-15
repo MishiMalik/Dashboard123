@@ -6,10 +6,14 @@ for (i = 0; i < dropdown.length; i++) {
   dropdown[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "flex") {
-      dropdownContent.style.display = "none";
+    if (dropdownContent.style.opacity === "0") {
+      dropdownContent.style.height = "0";
+      dropdownContent.style.zIndex= "-100";
     } else {
-      dropdownContent.style.display = "flex";
+      dropdownContent.style.opacity = "1";
+      dropdownContent.style.maxHeight = "600px";
+      dropdownContent.style.zIndex= "1000";
+      dropdownContent.style.padding= "10px 0px 10px 40px";
     }
   });
 }
