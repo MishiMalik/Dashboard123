@@ -632,7 +632,26 @@ table.dataTable.no-footer {
    font-weight: 500;
    font-size: 14px;
 }
-
+/* ===========================================================================Go Top */
+.go-top{
+   position: fixed;
+   bottom: 50px;
+   right: 50px;
+   background-color: var(--black);
+   font-size: 30px;
+   color: white;
+   line-height: 28px;
+  border: 0px solid transparent;
+  padding: 3px;
+  border-radius: 4px;
+  display: none;
+}
+.go-top a{
+   font-size: 30px;
+   color: white;
+   line-height: 28px;
+   padding: 0px;
+}
 
 /* ============================================================================Service page */
 .service-card {
@@ -641,6 +660,7 @@ table.dataTable.no-footer {
    border-radius: 4px;
    color: var(--black);
    margin-bottom: 15px;
+   
 }
 
 .service-card:hover {
