@@ -27,7 +27,7 @@ for (i = 0; i < dropdown.length; i++) {
       dropdownContent.style.maxHeight = "0px";
       dropdownContent.style.minHeight = "0px";
       dropdownContent.style.zIndex= "-100";
-      dropdownContent.style.padding= "10px  0px 10px 40px";
+      dropdownContent.style.padding= "0px  0px 0px 40px";
     } else {
       dropdownContent.style.opacity = "1";
       dropdownContent.style.maxHeight = "600px";
