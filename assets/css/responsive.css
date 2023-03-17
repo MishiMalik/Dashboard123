@@ -119,4 +119,9 @@
    font-size: 20px;
 
 }
+.logo-login img {
+   height: 60px;
+   width: auto;
+   object-fit: contain;
+}
   }
