@@ -101,7 +101,11 @@
 
 
 
+
 /* =========================================================backgroun */
 .bg-black{
     background-color: var(--black);
+}
+.no-decoration{
+    text-decoration: none;
 }
