@@ -12,6 +12,7 @@ $(window).on('scroll', function () {
 
 //* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
 var dropdown = document.getElementsByClassName("dropdown-btn");
+// var link = document.getElementsByClassName("dropdown-container-link")
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
@@ -24,6 +25,7 @@ for (i = 0; i < dropdown.length; i++) {
       dropdownContent.style.minHeight = "0px";
       dropdownContent.style.zIndex= "-100";
       dropdownContent.style.padding= "0px  0px 0px 40px";
+
     } else {
       dropdownContent.style.opacity = "1";
       dropdownContent.style.maxHeight = "600px";

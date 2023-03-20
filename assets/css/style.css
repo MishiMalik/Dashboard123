@@ -11,7 +11,7 @@ body {
 .sidebar {
    width: 250px;
    height: 100%;
-   overflow-y: scroll;
+   overflow-y: auto;
    border-right: 1px solid var(--grey);
    padding: 15px 0px;
    position: fixed;
@@ -118,8 +118,11 @@ body {
 .dropdown-container a {
    position: relative;
    white-space: nowrap;
+   
 }
-
+/* .dropdown-container-link{
+   max-height: 0px;
+} */
 .dropdown-container a::before {
    content: " ";
    position: absolute;
@@ -702,7 +705,20 @@ table.dataTable.no-footer {
    text-align: center;
    border-radius: 4px;
 }
-
+.log-btn i{
+  opacity: 0;
+  width: 0;
+  transition: all .5s ease-in-out;
+}
 .log-btn:hover {
    color: white !important;
+   background-color: var(--primary);
+   border: 1px solid var(--primary);
+   transition: all 2s ease-in-out;
+   transform: scaleX(1.01);
+}
+.log-btn:hover i{
+   opacity: 1;
+   width: 20px;
+   transition: all .5s ease-in-out;
 }
