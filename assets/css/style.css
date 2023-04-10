@@ -102,7 +102,7 @@ body {
    align-items: flex-start;
    justify-content: flex-start;
    background-color: var(--grey-light);
-   padding: 0px 0px 0px 40px;
+   padding: 0px 0px 0px 30px;
    position: relative;
    border: 1px solid var(--grey);
    border-radius: 4px;
@@ -112,14 +112,17 @@ body {
    max-height: 0px;
    opacity: 0;
    transition: all .8s !important;
-
+   overflow: hidden;
 }
 
 .dropdown-container a {
    position: relative;
+   /* overflow: hidden;
    white-space: nowrap;
-   
+   text-overflow: ellipsis;
+   width: 165px; */
 }
+
 /* .dropdown-container-link{
    max-height: 0px;
 } */
@@ -132,6 +135,11 @@ body {
    width: 6px;
    border-radius: 100%;
    background-color: var(--grey-dark);
+}
+
+.bi-chevron-down {
+   transform: rotate(0deg);
+   transition: all 1s;
 }
 
 .dropdown-btn {
@@ -543,6 +551,10 @@ table.dataTable.no-footer {
    border-radius: 100%;
    overflow: hidden;
    object-fit: cover;
+   background-color: #000000b7;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 /* Tabs */
@@ -635,8 +647,9 @@ table.dataTable.no-footer {
    font-weight: 500;
    font-size: 14px;
 }
+
 /* ===========================================================================Go Top */
-.go-top{
+.go-top {
    position: fixed;
    bottom: 50px;
    right: 50px;
@@ -644,12 +657,13 @@ table.dataTable.no-footer {
    font-size: 30px;
    color: white;
    line-height: 28px;
-  border: 0px solid transparent;
-  padding: 3px;
-  border-radius: 4px;
-  display: none;
+   border: 0px solid transparent;
+   padding: 3px;
+   border-radius: 4px;
+   display: none;
 }
-.go-top a{
+
+.go-top a {
    font-size: 30px;
    color: white;
    line-height: 28px;
@@ -663,7 +677,7 @@ table.dataTable.no-footer {
    border-radius: 4px;
    color: var(--black);
    margin-bottom: 15px;
-   
+
 }
 
 .service-card:hover {
@@ -707,8 +721,66 @@ table.dataTable.no-footer {
 }
 
 .log-btn:hover {
-   color:white !important;
-   background-color:var(--primary);
+   color: white !important;
+   background-color: var(--primary);
    border: 2px solid var(--primary);
    font-family: 700;
+}
+
+/* ====================================================================Toolpit */
+.tooltip-css {
+   position: relative;
+   display: inline-block;
+
+}
+
+.tooltip-css .tooltiptext-css {
+   visibility: hidden !important;
+   width: 140px;
+   background-color: black;
+   color: #fff !important;
+   text-align: center;
+   border-radius: 6px;
+   padding: 5px 5px;
+
+   /* Position the tooltip */
+   position: absolute;
+   z-index: 1;
+   top: 100%;
+   right: 0;
+
+}
+
+.tooltip-css:hover .tooltiptext-css {
+   visibility: visible !important;
+}
+
+.tooltip-css .tooltiptext-css::after {
+   content: " ";
+   position: absolute;
+   bottom: 100%;
+   /* At the top of the tooltip */
+   right: 5%;
+   margin-left: -5px;
+   border-width: 5px;
+   border-style: solid;
+   border-color: transparent transparent black transparent;
+}
+
+
+.action-dropdown{
+   background-color:#f9f9f9;
+   padding: 7px 25px;
+  
+}
+.action-dropdown .dropdown-btns{
+   font-size: 16px;
+   color: var(--black);
+   text-decoration: none;
+   font-weight: 500;
+}
+.go-back{
+   color: var(--black);
+   text-decoration: none;
+   font-weight: 600;
 }

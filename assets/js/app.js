@@ -24,18 +24,20 @@ for (i = 0; i < dropdown.length; i++) {
       dropdownContent.style.maxHeight = "0px";
       dropdownContent.style.minHeight = "0px";
       dropdownContent.style.zIndex= "-100";
-      dropdownContent.style.padding= "0px  0px 0px 40px";
+      dropdownContent.style.padding= "0px  0px 0px 30px";
 
     } else {
       dropdownContent.style.opacity = "1";
       dropdownContent.style.maxHeight = "600px";
       dropdownContent.style.minHeight = "0px";
       dropdownContent.style.zIndex= "1000";
-      dropdownContent.style.padding= "10px  0px 10px 40px";
+      dropdownContent.style.padding= "10px  5px 10px 30px";
     }
   });
 }
-
+// $(".dropdown-btn").on("click",function(){
+//   $(".bi-chevron-down").css("transform","rotate(180deg)")
+// })
 
 // ===================================dataTables
 let table = new DataTable('#myTable', {
